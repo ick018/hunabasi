@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4efe5" />
+    <meta
+      name="description"
+      content="船橋の公園、海、街、食を楽しむための観光ガイド。"
+    />
+    <title>ふなばし、みつけた。｜FUNABASHI GUIDE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="トップへ">
+        <span class="brand-mark">舟</span>
+        <span>FUNABASHI<br />GUIDE</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="メインナビゲーション">
+        <a href="#spots">スポット</a>
+        <a href="#walk">散歩コース</a>
+        <a href="#food">グルメ</a>
+        <a href="#access">アクセス</a>
+      </nav>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span>
+        <span class="sr-only">メニュー</span>
+      </button>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="モバイルナビゲーション">
+        <a href="#spots">スポット</a>
+        <a href="#walk">散歩コース</a>
+        <a href="#food">グルメ</a>
+        <a href="#access">アクセス</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> 千葉県 船橋市</p>
+          <h1 id="hero-title">
+            ふなばし、<br />
+            <em>みつけた。</em>
+          </h1>
+          <p class="hero-lead">
+            風を感じる海沿いと、緑あふれる公園。<br />
+            ちょっと知らない船橋を、ゆっくり歩こう。
+          </p>
+          <a class="primary-button" href="#spots">
+            おすすめを見る
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-art" aria-label="船橋市をイメージした風景">
+          <div class="sun"></div>
+          <div class="cloud cloud-one"></div>
+          <div class="cloud cloud-two"></div>
+          <div class="city">
+            <span class="building building-a"></span>
+            <span class="building building-b"></span>
+            <span class="building building-c"></span>
+          </div>
+          <div class="sea">
+            <span class="boat"><i></i></span>
+          </div>
+          <div class="hero-seal">FUNABASHI</div>
+        </div>
+      </section>
+
+      <section class="intro">
+        <p class="section-index">01 — 船橋の魅力</p>
+        <h2>都会の便利さと、海と緑の余白。</h2>
+        <p>
+          東京に近くて、帰りやすい。そのわりに、のんびりできる場所がたくさん。
+          花や海、歴史とグルメ――船橋の毎日は、ひとつひとつを楽しめばもっと広がる。
+        </p>
+      </section>
+
+      <section class="spots" id="spots" aria-labelledby="spots-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-index">02 — おすすめスポット</p>
+            <h2 id="spots-title">気になる場所から、<br />旅をはじめよう。</h2>
+          </div>
+          <div class="filters" aria-label="スポットを絞り込む">
+            <button class="filter active" type="button" data-filter="all">すべて</button>
+            <button class="filter" type="button" data-filter="park">公園・自然</button>
+            <button class="filter" type="button" data-filter="culture">文化・歴史</button>
+            <button class="filter" type="button" data-filter="sea">海沿い</button>
+          </div>
+        </div>
+
+        <div class="spot-grid">
+          <article class="spot-card spot-card-featured" data-category="park culture">
+            <div class="spot-image image-forest">
+              <span class="spot-number">01</span>
+              <span class="spot-tag">公園・自然</span>
+            </div>
+            <div class="spot-content">
+              <p class="spot-place">宮本・船橋市</p>
+              <h3>船橋アンデルセン公園</h3>
+              <p>童話をたどるような庭園、広い芝生、季節ごとの花。家族や友人と半日ゆっくり過ごせる公園。</p>
+              <a href="https://www.chiba-park.or.jp/andersen/" target="_blank" rel="noreferrer">詳しく見る <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="spot-card" data-category="culture">
+            <div class="spot-image image-shrine">
+              <span class="spot-number">02</span>
+              <span class="spot-tag">文化・歴史</span>
+            </div>
+            <div class="spot-content">
+              <p class="spot-place">宮本・船橋市</p>
+              <h3>船橋大神宮</h3>
+              <p>地元の人々に親しまれてきた鎮守の社。静かな参道で、船橋の歴史を感じてみて。</p>
+              <a href="https://www.funabashidaijingu.com/" target="_blank" rel="noreferrer">詳しく見る <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="spot-card" data-category="sea">
+            <div class="spot-image image-sea">
+              <span class="spot-number">03</span>
+              <span class="spot-tag">海沿い</span>
+            </div>
+            <div class="spot-content">
+              <p class="spot-place">金浜・船橋市</p>
+              <h3>船橋三番瀬海浜公園</h3>
+              <p>干潟を眺め、潮風を感じる余白の場所。夕暮れの空も、海沿いならではの景色。</p>
+              <a href="https://www.pref.chiba.lg.jp/kouen/toshi/kouen/chiba/sanbanse.html" target="_blank" rel="noreferrer">詳しく見る <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="walk" id="walk" aria-labelledby="walk-title">
+        <div class="walk-image" role="img" aria-label="船橋の街並みをイメージしたイラスト">
+          <div class="route-line">
+            <span class="route-dot dot-one"></span>
+            <span class="route-dot dot-two"></span>
+            <span class="route-dot dot-three"></span>
+          </div>
+        </div>
+        <div class="walk-copy">
+          <p class="section-index">03 — おすすめ散歩コース</p>
+          <h2 id="walk-title">駅から、緑へ。<br />ちょっと遠回り。</h2>
+          <ol class="course">
+            <li>
+              <span>01</span>
+              <div><strong>船橋駅</strong><small>スタート</small></div>
+            </li>
+            <li>
+              <span>02</span>
+              <div><strong>船橋大神宮</strong><small>約15分</small></div>
+            </li>
+            <li>
+              <span>03</span>
+              <div><strong>アンデルセン公園</strong><small>約30分</small></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="food" id="food" aria-labelledby="food-title">
+        <p class="section-index">04 — 船橋のグルメ</p>
+        <h2 id="food-title">旅の途中、<br />地元の味をひとつ。</h2>
+        <div class="food-list">
+          <article>
+            <span class="food-no">01</span>
+            <div>
+              <h3>船橋ソース</h3>
+              <p>焼きそばやお好み焼きで、地元の味を楽しむ。</p>
+            </div>
+          </article>
+          <article>
+            <span class="food-no">02</span>
+            <div>
+              <h3>梨</h3>
+              <p>船橋・習志野エリアでも親しまれる、甘くみずみずしい果物。</p>
+            </div>
+          </article>
+          <article>
+            <span class="food-no">03</span>
+            <div>
+              <h3>市場の朝ごはん</h3>
+              <p>海の近くで、新鮮な魚を使った一皿を。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="access" id="access" aria-labelledby="access-title">
+        <div>
+          <p class="section-index">05 — アクセス</p>
+          <h2 id="access-title">東京から、<br />あっと言う間。</h2>
+        </div>
+        <div class="access-route">
+          <div class="route-origin">
+            <span>TOKYO</span>
+            <strong>東京駅</strong>
+          </div>
+          <div class="route-arrow"><span></span></div>
+          <div class="route-origin destination">
+            <span>FUNABASHI</span>
+            <strong>船橋駅</strong>
+          </div>
+        </div>
+        <p class="access-note">JR総武快速・京成電鉄・東武野田線など、複数路線から市内へ。</p>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#">
+        <span class="brand-mark">舟</span>
+        <span>FUNABASHI<br />GUIDE</span>
+      </a>
+      <p>ふなばし、みつけた。</p>
+      <a class="back-top" href="#">TOP <span>↑</span></a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
